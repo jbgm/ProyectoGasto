@@ -1004,7 +1004,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="dbgastroclinicaEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="DBGastroClinicaEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="categorias" EntityType="Self.categoria" />
           <EntitySet Name="clientes" EntityType="Self.cliente" />
           <EntitySet Name="compras" EntityType="Self.compra" />
@@ -1111,7 +1111,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DBGastroClinicaModelStoreContainer" CdmEntityContainer="dbgastroclinicaEntities">
+        <EntityContainerMapping StorageEntityContainer="DBGastroClinicaModelStoreContainer" CdmEntityContainer="DBGastroClinicaEntities">
           <EntitySetMapping Name="categorias">
             <EntityTypeMapping TypeName="DBGastroClinicaModel.categoria">
               <MappingFragment StoreEntitySet="categoria">

@@ -7,21 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class detalle_compra
+    public partial class detalle_factura
     {
         public int id { get; set; }
         public Nullable<double> Subtotal { get; set; }
         public Nullable<int> Cantidad { get; set; }
-        public Nullable<double> Costo { get; set; }
-        public int Compra_id { get; set; }
+        public Nullable<double> Precio_Venta { get; set; }
+        public int Factura_id { get; set; }
         public int Lote_id { get; set; }
     
-        public virtual compra compra { get; set; }
+        public virtual factura factura { get; set; }
         public virtual lote lote { get; set; }
     }
 }

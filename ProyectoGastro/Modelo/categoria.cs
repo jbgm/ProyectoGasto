@@ -7,18 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class permiso_usuario
+    public partial class categoria
     {
-        public int id { get; set; }
-        public int Tipo_Usuario_id { get; set; }
-        public int Permiso_id { get; set; }
+        public categoria()
+        {
+            this.producto_categoria = new HashSet<producto_categoria>();
+        }
     
-        public virtual permiso permiso { get; set; }
-        public virtual tipo_usuario tipo_usuario { get; set; }
+        public int id { get; set; }
+        public string Categoria1 { get; set; }
+    
+        public virtual ICollection<producto_categoria> producto_categoria { get; set; }
     }
 }

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ProyectoGastro.Controlador.C_Producto" Collapsed="true">
+    <Position X="2.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQgAAAAAAACAAAAAAAIAAAAAAAAI=</HashCode>
+      <FileName>Controlador\C_Producto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoGastro.Controlador.Entidades" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAQAAAAAACAAAAEAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Controlador\Entidades.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProyectoGastro.Controlador.C_Usuario" Collapsed="true">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACABAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAA=</HashCode>
+      <FileName>Controlador\C_Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ProyectoGastro.Interfaces.I_Vista" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\I_Vista.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProyectoGastro.Interaces.I_Usuario" Collapsed="true">
+    <Position X="10.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\I_Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProyectoGastro.Interfaces.I_Producto" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\I_Producto.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ProyectoGastro.Interfaces.I_Venta" Collapsed="true">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\I_Venta.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProyectoGastro
+namespace ProyectoGastro.VIstas
 {
     public partial class Principal : Form
     {

@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Text.RegularExpressions;
+using ProyectoGastro.Modelo;
+using ProyectoGastro.Controlador;
 
 namespace ProyectoGastro
 {
     public partial class Form1 : Form
     {
-        dbgastroclinicaEntities entidades = new dbgastroclinicaEntities();
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +31,7 @@ namespace ProyectoGastro
 
         private IEnumerable<producto> Productos()
         {
-            return (from p in entidades.productoes where p.Nombre.StartsWith(textBox1.Text) select p).ToList();
+            return (from p in Entidades.Productos where p.Nombre.StartsWith(textBox1.Text) select p).ToList();
         }
     }
 }

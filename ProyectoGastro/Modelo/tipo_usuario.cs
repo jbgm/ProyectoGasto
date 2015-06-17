@@ -7,15 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class tbl_detalle_fact
+    public partial class tipo_usuario
     {
-        public int idtbl_Detalle_fact { get; set; }
-        public string subTotal { get; set; }
-        public string cantidad { get; set; }
+        public tipo_usuario()
+        {
+            this.permiso_usuario = new HashSet<permiso_usuario>();
+            this.usuarios = new HashSet<usuario>();
+        }
+    
+        public int id { get; set; }
+        public string Tipo { get; set; }
+    
+        public virtual ICollection<permiso_usuario> permiso_usuario { get; set; }
+        public virtual ICollection<usuario> usuarios { get; set; }
     }
 }

@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbgastroclinicaEntities : DbContext
+    public partial class DBGastroClinicaEntities : DbContext
     {
-        public dbgastroclinicaEntities()
-            : base("name=dbgastroclinicaEntities")
+        public DBGastroClinicaEntities()
+            : base("name=DBGastroClinicaEntities")
         {
         }
     

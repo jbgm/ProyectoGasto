@@ -1,4 +1,4 @@
-﻿namespace ProyectoGastro
+﻿namespace ProyectoGastro.VIstas
 {
     partial class Principal
     {
