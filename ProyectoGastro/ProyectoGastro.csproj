@@ -61,6 +61,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Busqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busqueda.Designer.cs">
+      <DependentUpon>Busqueda.cs</DependentUpon>
+    </Compile>
     <Compile Include="categoria.cs">
       <DependentUpon>DBGastro.tt</DependentUpon>
     </Compile>
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="compra.cs">
       <DependentUpon>DBGastro.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.Designer.cs">
+      <DependentUpon>Conexion.cs</DependentUpon>
     </Compile>
     <Compile Include="DBGastro.Context.cs">
       <AutoGen>True</AutoGen>
@@ -102,6 +114,18 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresoCliente.Designer.cs">
+      <DependentUpon>IngresoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Iniciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iniciar.Designer.cs">
+      <DependentUpon>Iniciar.cs</DependentUpon>
     </Compile>
     <Compile Include="lote.cs">
       <DependentUpon>DBGastro.tt</DependentUpon>
@@ -150,8 +174,20 @@
     <Compile Include="usuario.cs">
       <DependentUpon>DBGastro.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Busqueda.resx">
+      <DependentUpon>Busqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Conexion.resx">
+      <DependentUpon>Conexion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresoCliente.resx">
+      <DependentUpon>IngresoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iniciar.resx">
+      <DependentUpon>Iniciar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
