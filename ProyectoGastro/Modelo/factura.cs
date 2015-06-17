@@ -7,27 +7,28 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class compra
+    public partial class factura
     {
-        public compra()
+        public factura()
         {
-            this.detalle_compra = new HashSet<detalle_compra>();
+            this.detalle_factura = new HashSet<detalle_factura>();
         }
     
         public int id { get; set; }
-        public Nullable<int> Numero { get; set; }
         public Nullable<System.DateTime> Fecha { get; set; }
         public Nullable<double> Total { get; set; }
+        public Nullable<int> Numero { get; set; }
+        public string Serie { get; set; }
+        public int Cliente_id { get; set; }
         public int Usuario_id { get; set; }
-        public int Proveedor_id { get; set; }
     
-        public virtual proveedor proveedor { get; set; }
+        public virtual cliente cliente { get; set; }
+        public virtual ICollection<detalle_factura> detalle_factura { get; set; }
         public virtual usuario usuario { get; set; }
-        public virtual ICollection<detalle_compra> detalle_compra { get; set; }
     }
 }

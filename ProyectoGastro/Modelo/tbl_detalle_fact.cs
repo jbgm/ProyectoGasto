@@ -7,21 +7,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class categoria
+    public partial class tbl_detalle_fact
     {
-        public categoria()
-        {
-            this.producto_categoria = new HashSet<producto_categoria>();
-        }
-    
-        public int id { get; set; }
-        public string Categoria1 { get; set; }
-    
-        public virtual ICollection<producto_categoria> producto_categoria { get; set; }
+        public int idtbl_Detalle_fact { get; set; }
+        public string subTotal { get; set; }
+        public string cantidad { get; set; }
     }
 }

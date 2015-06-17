@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Collections.Generic;

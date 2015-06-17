@@ -7,18 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class producto_categoria
+    public partial class producto
     {
-        public int id { get; set; }
-        public int Categoria_id { get; set; }
-        public int Producto_id { get; set; }
+        public producto()
+        {
+            this.producto_categoria = new HashSet<producto_categoria>();
+            this.producto_presentacion = new HashSet<producto_presentacion>();
+        }
     
-        public virtual categoria categoria { get; set; }
-        public virtual producto producto { get; set; }
+        public int id { get; set; }
+        public string Nombre { get; set; }
+        public string Fabricante { get; set; }
+    
+        public virtual ICollection<producto_categoria> producto_categoria { get; set; }
+        public virtual ICollection<producto_presentacion> producto_presentacion { get; set; }
     }
 }

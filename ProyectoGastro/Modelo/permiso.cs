@@ -7,21 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGastro
+namespace ProyectoGastro.Modelo
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class telefono
+    public partial class permiso
     {
-        public int id { get; set; }
-        public string Numero { get; set; }
-        public int Tipo_Telefono_id { get; set; }
-        public Nullable<int> Proveedor_id { get; set; }
-        public Nullable<int> Empleado_id { get; set; }
+        public permiso()
+        {
+            this.permiso_usuario = new HashSet<permiso_usuario>();
+        }
     
-        public virtual empleado empleado { get; set; }
-        public virtual proveedor proveedor { get; set; }
-        public virtual tipo_telefono tipo_telefono { get; set; }
+        public int id { get; set; }
+        public string Modulo { get; set; }
+    
+        public virtual ICollection<permiso_usuario> permiso_usuario { get; set; }
     }
 }
